@@ -3,55 +3,47 @@
   justify-content: space-between;
   align-items: center;
   background: white;
-  padding: 10px 15px; 
-  max-width: 1200px;
+  padding: var(--spacing-sm);
+  max-width: var(--max-width);
   margin: 0 auto;
 }
-
 .logo {
-  height: 45px;
+  height: 40px;
 }
-
 .nav-buttons {
   display: flex;
-  gap: 10px;
+  gap: var(--spacing-sm);
 }
-
 .nav-btn {
   background: transparent;
   border: none;
   cursor: pointer;
   display: flex;
   align-items: center;
-  padding: 5px;
+  padding: var(--spacing-xs);
 }
-
 .nav-btn img {
   width: 24px;
   height: 24px;
 }
-
 .nav-btn .nav-text {
   display: none;
 }
-
 @media (min-width: 768px) {
   .header {
-    padding: 15px 20px;
+    padding: var(--spacing-md) var(--spacing-lg);
   }
-
   .logo {
     height: 60px;
   }
-  
   .nav-btn img {
     width: 30px;
     height: 30px;
   }
-  
   .nav-btn .nav-text {
     display: inline-block;
-    margin-left: 8px;
-    font-size: 1rem;
+    margin-left: var(--spacing-sm);
+    font-size: var(--base-font-size);
   }
 }
+

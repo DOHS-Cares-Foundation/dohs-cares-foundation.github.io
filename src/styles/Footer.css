@@ -3,78 +3,70 @@
   bottom: 0;
   left: 0;
   right: 0;
-  max-width: 1200px;
-  margin: 0 auto;
+  margin-top: var(--spacing-sm);
+  max-width: var(--max-width);
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: center;
   background: white;
-  padding: 15px 20px;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
-  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); 
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-top-left-radius: calc(var(--border-radius) * 3);
+  border-top-right-radius: calc(var(--border-radius) * 3);
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
   z-index: 1000;
 }
-
 .footer-link {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-decoration: none;
-  color: #333;
+  color: var(--secondary-color);
 }
-
 .footer-link:not(.sos) img {
   width: 30px;
   height: 30px;
 }
-
 .footer-link:not(.sos) span {
-  margin-top: 5px;
-  font-size: 1rem;
+  margin-top: var(--spacing-xs);
+  font-size: var(--base-font-size);
 }
-
 .footer-link.active {
-  color: #6a35aa;
+  color: var(--accent-color);
 }
-
 .footer-link.sos {
   width: 60px;
   height: 60px;
-  background: #6a35aa;
+  background: var(--accent-color);
   border-radius: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #fff;
+  color: white;
   font-size: 0.9rem;
   text-transform: uppercase;
 }
-
 .footer-link.sos.active {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
-
 .footer-link.sos img {
   width: 24px;
   height: 24px;
-  margin-bottom: 3px;
+  margin-bottom: var(--spacing-xs);
 }
-
 @media (max-width: 600px) {
   .footer {
-    padding: 10px 15px;
+    padding: var(--spacing-sm) var(--spacing-sm);
   }
-
   .footer-link:not(.sos) img {
     width: 24px;
     height: 24px;
   }
   .footer-link:not(.sos) span {
-    font-size: 0.8rem;
+    font-size: var(--base-font-size);
   }
-
   .footer-link.sos {
     width: 50px;
     height: 50px;
@@ -85,3 +77,4 @@
     height: 20px;
   }
 }
+
