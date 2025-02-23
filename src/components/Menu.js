@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import '../styles/Menu.css';
 
 const Menu = ({ isOpen, onClose }) => {
@@ -38,7 +39,7 @@ const Menu = ({ isOpen, onClose }) => {
           <NavLink to="/profile" onClick={onClose}>Profile</NavLink>
         </div>
         <div className="menu-item">
-          <NavLink to="/" onClick={onClose}>Home</NavLink>
+          <NavLink to="/home" onClick={onClose}>Home</NavLink>
         </div>
         <div className="menu-item">
           <NavLink to="/report" onClick={onClose}>Report</NavLink>

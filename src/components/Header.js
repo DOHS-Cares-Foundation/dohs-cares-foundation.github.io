@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import '../styles/Header.css';
 import Menu from './Menu';
 
@@ -25,7 +26,7 @@ const Header = () => {
   return (
     <>
       <header className="header">
-        <Link to="/">
+        <Link to="/home">
           <img src="/images/logo.svg" alt="Prefem Logo" className="logo" />
         </Link>
         <div className="nav-buttons">
