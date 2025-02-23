@@ -26,7 +26,7 @@ const Header = () => {
   return (
     <>
       <header className="header">
-        <Link to="/home">
+        <Link to="/">
           <img src="/images/logo.svg" alt="Prefem Logo" className="logo" />
         </Link>
         <div className="nav-buttons">

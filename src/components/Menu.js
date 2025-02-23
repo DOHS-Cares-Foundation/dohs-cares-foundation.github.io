@@ -39,7 +39,7 @@ const Menu = ({ isOpen, onClose }) => {
           <NavLink to="/profile" onClick={onClose}>Profile</NavLink>
         </div>
         <div className="menu-item">
-          <NavLink to="/home" onClick={onClose}>Home</NavLink>
+          <NavLink to="/" onClick={onClose}>Home</NavLink>
         </div>
         <div className="menu-item">
           <NavLink to="/report" onClick={onClose}>Report</NavLink>
