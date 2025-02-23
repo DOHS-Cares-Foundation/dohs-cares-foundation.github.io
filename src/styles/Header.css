@@ -1,0 +1,57 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 10px 15px; 
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  height: 45px;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+.nav-btn img {
+  width: 24px;
+  height: 24px;
+}
+
+.nav-btn .nav-text {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .header {
+    padding: 15px 20px;
+  }
+
+  .logo {
+    height: 60px;
+  }
+  
+  .nav-btn img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .nav-btn .nav-text {
+    display: inline-block;
+    margin-left: 8px;
+    font-size: 1rem;
+  }
+}
