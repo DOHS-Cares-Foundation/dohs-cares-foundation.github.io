@@ -1,13 +1,20 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import '../styles/Menu.css';
 
 const Menu = ({ isOpen, onClose }) => {
   const [languageOpen, setLanguageOpen] = useState(false);
+  const { i18n } = useTranslation();
 
   const toggleLanguage = () => {
     setLanguageOpen(!languageOpen);
+  };
+
+  const changeLanguage = (lang) => {
+    i18n.changeLanguage(lang);
+    setLanguageOpen(false);
+    onClose();
   };
 
   return (
@@ -18,7 +25,6 @@ const Menu = ({ isOpen, onClose }) => {
         </button>
       </div>
       <div className="menu-content">
-        {/* Dropdown for Change Language */}
         <div className="menu-item dropdown">
           <div
             className={`dropdown-header ${languageOpen ? 'active' : ''}`}
@@ -29,12 +35,15 @@ const Menu = ({ isOpen, onClose }) => {
           </div>
           {languageOpen && (
             <div className="dropdown-content">
-              <a href="index.html" className="dropdown-item">English</a>
-              <div className="dropdown-item">Pidgin</div>
+              <button className="dropdown-item" onClick={() => changeLanguage('en')}>
+                English
+              </button>
+              <button className="dropdown-item" onClick={() => changeLanguage('pidgin')}>
+                Pidgin
+              </button>
             </div>
           )}
         </div>
-        {/* Other menu items */}
         <div className="menu-item">
           <NavLink to="/profile" onClick={onClose}>Profile</NavLink>
         </div>
@@ -65,4 +74,4 @@ const Menu = ({ isOpen, onClose }) => {
 };
 
 export default Menu;
-          
+
