@@ -59,7 +59,7 @@ h4 {
   line-height: 1.3;
 }
 
-body, p, span, a, .menu-item, .nav-text, .dropdown-header {
+body, p, span, a, .menu-item, .nav-text, .dropdown-header, .dropdown-item {
   font-size: var(--base-font-size);
   line-height: 1.7;
 }
