@@ -41,7 +41,6 @@
 
 .menu-item {
   padding: var(--spacing-sm) var(--spacing-xs);
-  border-bottom: 1px solid #eee;
   cursor: pointer;
   font-size: var(--base-font-size);
 }
@@ -61,7 +60,7 @@
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
-  padding: var(--spacing-sm) var(--spacing-xs);
+  padding: var(--spacing-sm) 0;
   transition: color 0.3s, border-bottom 0.3s;
   font-size: var(--base-font-size);
 }
@@ -69,7 +68,6 @@
 .dropdown-header.active {
   color: var(--accent-color);
   border-bottom: 2px solid var(--accent-color);
-  width: fit-content;
 }
 
 .dropdown-header .arrow {

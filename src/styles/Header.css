@@ -50,6 +50,7 @@
     display: inline-block;
     margin-left: var(--spacing-sm);
     font-size: var(--base-font-size);
+    font-family: var(--font-family);
   }
 }
 
