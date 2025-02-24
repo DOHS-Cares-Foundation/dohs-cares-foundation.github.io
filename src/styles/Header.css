@@ -7,13 +7,16 @@
   max-width: var(--max-width);
   margin: 0 auto;
 }
+
 .logo {
   height: 40px;
 }
+
 .nav-buttons {
   display: flex;
   gap: var(--spacing-sm);
 }
+
 .nav-btn {
   background: transparent;
   border: none;
@@ -22,13 +25,16 @@
   align-items: center;
   padding: var(--spacing-xs);
 }
+
 .nav-btn img {
   width: 24px;
   height: 24px;
 }
+
 .nav-btn .nav-text {
   display: none;
 }
+
 @media (min-width: 768px) {
   .header {
     padding: var(--spacing-md) var(--spacing-lg);
