@@ -87,5 +87,9 @@
   padding: var(--spacing-xs) var(--spacing-sm);
   margin: var(--spacing-xs) 0;
   font-size: var(--base-font-size);
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
 }
 
