@@ -64,3 +64,21 @@ body, p, span, a, .menu-item, .nav-text, .dropdown-header, .dropdown-item {
   line-height: 1.7;
 }
 
+button {
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius);
+  padding: var(--spacing-xs) var(--spacing-md);
+  font-size: var(--base-font-size);
+  font-family: var(--font-family);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:active {
+  background-color: transparent;
+  border: 2px solid var(--accent-color);
+  color: var(--accent-color);
+}
+
