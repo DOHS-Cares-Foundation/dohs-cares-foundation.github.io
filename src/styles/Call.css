@@ -1,7 +1,11 @@
 .mini-container {
+  var(--background-color);
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 90%;
   max-width: 800px;
-  margin: auto;
-  text-align: left;
+  margin: var(--spacing-lg) auto;
 }
 
 .tabs {
@@ -84,3 +88,4 @@
   display: inline-block;
   margin-right: 10px;
 }
+
