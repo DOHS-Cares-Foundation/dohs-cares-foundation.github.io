@@ -1,5 +1,5 @@
 .mini-container {
-  var(--background-color);
+  background: var(--background-color);
   padding: var(--spacing-lg);
   border-radius: var(--border-radius);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
