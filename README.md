@@ -1,2 +1,2 @@
 # dohs-cares-foundation.github.io
-PreFem is a web app designed to combat femicide in Nigeria
+Official website of DOHS Cares Foundation.
